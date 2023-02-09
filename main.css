@@ -1,0 +1,45 @@
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    }
+    .strobe {
+
+        border-right: solid lime;
+        background-color: white;
+        /* transition: 1s; */
+    }
+    .strobe:hover {
+        background-color: rgba(255, 255, 0, 0.884);
+    }
+    .strobe4 {
+        animation-name: strobe4;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+    }
+    .strobe5 {
+        animation-name: strobe5;
+        animation-duration: 6s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes strobe4 {
+        from {
+            background-color: yellow;
+        }
+        to {
+            background-color: white;
+        }
+    }
+    @keyframes strobe5 {
+        from {
+            background-color: yellow;
+        }
+        to {
+            background-color: white;
+        }
+    }
